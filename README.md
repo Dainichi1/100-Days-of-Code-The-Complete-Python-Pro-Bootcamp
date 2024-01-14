@@ -1,6 +1,6 @@
 ESERCIZI PROPOSTI DAL CORSO UDEMY : 100 DAYS OF CODE - THE COMPLETE PYTHON PRO BOOTCAMP.
 
-DI SEGUITO I DETTAGLI:
+DI SEGUITO I DETTAGLI DEL CORSO:
 
 Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!
 
