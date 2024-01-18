@@ -7,4 +7,3 @@ if random_testacroce == 1:
 else:
   print ("Tails")
   
-print (f"Il risultato è: {random_testacroce}.")
