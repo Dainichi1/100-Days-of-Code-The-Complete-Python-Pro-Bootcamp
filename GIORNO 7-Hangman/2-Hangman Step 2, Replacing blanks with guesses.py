@@ -22,8 +22,9 @@ guess = input("Guess a letter: ").lower()
 #e.g. If the user guessed "p" and the chosen word was "apple", then display should be ["_", "p", "p", "_", "_"].
 
 for position in  range(len(chosen_word)):
-    if chosen_word[position] == guess:
-        display[position] = guess
+    letter = chosen_word[position]
+    if letter == guess:
+        display[position] = letter
     
         
 
