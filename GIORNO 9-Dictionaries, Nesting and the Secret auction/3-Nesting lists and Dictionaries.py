@@ -13,7 +13,7 @@ travel_log = {
 # Nest a dictionary in a dictionary
 travel_log = {
     "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits": 12},
-    "Germany": ["Berlin", "Hamburg", "Stuttgart"],
+    "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5},
 }
 
 # Nest dictionary in a list
