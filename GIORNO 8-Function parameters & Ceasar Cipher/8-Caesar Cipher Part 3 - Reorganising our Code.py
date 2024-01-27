@@ -24,6 +24,5 @@ def caesar (plain_text, shift_amount, direction_choice):
             cipher_text += alphabet[new_position]
     print(f"The {direction_choice}d text is {cipher_text}")
 
-
 #TODO-2: Call the caesar() function, passing over the 'text', 'shift' and 'direction' values.
 caesar (plain_text=text, shift_amount=shift, direction_choice=direction)

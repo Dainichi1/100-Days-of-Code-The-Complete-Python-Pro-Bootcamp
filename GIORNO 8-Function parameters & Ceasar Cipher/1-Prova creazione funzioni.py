@@ -7,4 +7,5 @@ def greet():
     print ("Buongiorno")
     print ("Buonasera")
     print ("Buonanotte")
+    
 greet()
