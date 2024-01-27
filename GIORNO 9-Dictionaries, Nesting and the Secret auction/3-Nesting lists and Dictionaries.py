@@ -28,5 +28,3 @@ travel_log = [
     "total_visits": 5
     },
 ]
-
-
