@@ -5,6 +5,7 @@ def format_name (f_name, l_name):
     return f"{formatted_f_name} {formatted_l_name}"
 
 formatted_string = format_name ("AnGElA", "YU")
+
 print (formatted_string)
     
 
