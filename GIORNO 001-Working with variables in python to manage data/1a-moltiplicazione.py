@@ -4,6 +4,6 @@
 
 
 num1 = int(input("inserisci il primo numero: "))
-num2 = int(input("inserisci il secondo numero: "))
+num2 = int(input("inserisci il secondo numerooo: "))
 risultato = num1 * num2
 print ("Il risultato è: ", risultato)
