@@ -7,15 +7,20 @@
 
 #Write your code below this line 👇
 
-print ("Welcome to the tip calculator")
-bill = float(input ("What was the total bill? $"))
-percentage = int(input ("What percentage tip would like to give? 10, 12, or 15?"))
-people = int(input ("How many people to split the bill?"))
 
-tip = (bill * percentage) / 100
-bill_and_tip = bill + tip
-split = bill_and_tip / people
-final_amount = round (split, 2)
+print("Welcome to the tip calculator!")
 
+bill = float(input("What was the total bill? $"))
 
-print (f"Each person should pay: ${final_amount}")
+tip = int(input("How much tip would you like to give? 10, 12 or 15? "))
+
+people = int(input("How many people to split the bill? "))
+
+small_bill = bill/bill
+small_percent = tip / 100
+new_tip = small_bill + small_percent
+
+pay = (bill/people) * new_tip
+new_pay = round(pay,2)
+
+print(f"Each person should pay: ${new_pay}")
