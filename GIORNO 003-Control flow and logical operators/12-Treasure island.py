@@ -23,43 +23,21 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.") 
 
-prima_decisione = input('You\'re at a crossroad. Where do you want to go? Type "left" or "right"\n').lower()
-if prima_decisione == "left":
-    seconda_decisione = input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across.').lower()
-    if seconda_decisione == "wait":
-        terza_decisione = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?").lower()
-        if terza_decisione == "red":
-            print ("It's a room full of fire. Game over.")
-        elif terza_decisione == "yellow":
-            print ("You found the trasure. You win")
-            print( '''  _,-""._                       
-        _,-",~@);%~`-._               
-        \\""""""------"-...___         
-         |""""""------/|      |     
-         |      |HHHHH||      |       
-         |""""""------||      |       
-         |      _____ ||      |        
-         |     : ___ :||      |        
-         |     :|GSN|:||      |         
-         |     :|___|:||      |        
-         |     :""""":||      |          
-         |"""""-------||      |         
-         || ,~@);~.  |||      |        
-         ||~  ===  ~ |||      |        
-         |"""""-------||      |         
-         |"""""-------||      |         
-         || ,~@);~.  |||      |       
-         ||~  ===  ~ |||      |       
-         |"""""-------||      |      
-        /""""""-------\\....___\      
-      """""""---------....___: ''')
-        elif terza_decisione == "blue":
-            print ("You enter a room full of beasts. Game over.")
-        else:
-            print ("You chose a door that doesen't exists. Game over.")
+first_choice = input("You\'re at a cross road. Where do you want to go?\nType \"left\" or \"right\"")
+if first_choice == "left".lower():
+    second_choice = input("You\'ve come to a lake. There is an island int the middle of the lake.\nType \"wait\" to wait for a boat. Type \"swim\" to swim across. ")
+    if second_choice == "wait".lower():
+            third_choice = input ("You arrive at the island unharmed. There is a house with 3 doors.\nOne red, one yellow and one blu. Which color do you chose?")
+            if third_choice == "red".lower():
+                print("Burned by fire.\nGame Over.")
+            elif third_choice == "blu".lower():
+                print("Eaten by beasts.\nGame Over.")
+            elif third_choice == "yellow".lower():
+                print("You win!")
+            else:
+                print("Game over")
     else:
-        print("Attacked by trout.Game Over")
+            print ("Attacked by trout.\nGame over")
 else:
-    print ("Fall into a hole.Game Over.")
-
+    print ("Fall int a hole.\nGame over")
 
