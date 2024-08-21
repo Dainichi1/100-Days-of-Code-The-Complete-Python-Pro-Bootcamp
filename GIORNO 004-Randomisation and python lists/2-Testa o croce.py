@@ -1,9 +1,8 @@
 import random
 
-random_testacroce = random.randint (0,1)
+testa_croce = random.randint (0,1)
 
-if random_testacroce == 1:
-  print ("Heads")
+if testa_croce == 1:
+  print ('testa')
 else:
-  print ("Tails")
-  
+  print('croce')

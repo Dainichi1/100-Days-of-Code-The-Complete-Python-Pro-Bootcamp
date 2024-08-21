@@ -9,6 +9,7 @@ states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Conne
                      "Alaska", "Hawaii"]
 
 state = states_of_america[2]
+print(state)
 
 # cambio il nome dello stato in posizione 1
 states_of_america[1] = "Italia"

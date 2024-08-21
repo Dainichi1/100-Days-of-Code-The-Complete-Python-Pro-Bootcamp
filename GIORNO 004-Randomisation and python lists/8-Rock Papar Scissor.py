@@ -26,47 +26,38 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-while True:
-    scelta = int(input("Cosa scegli: premi 0 per sasso, 1 per carta, 2 per forbici:\n"))
-    if scelta in [0, 1, 2]:
-        break
-    else:
-        print("Hai scelto un numero errato. Per favore, scegli 0, 1 o 2.")
-        
-if scelta == 0:
-    print (rock)
-elif scelta == 1:
-    print (paper)
+
+
+mia_scelta = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+if mia_scelta == 0:
+    print(rock)
+elif mia_scelta == 1:
+    print(paper)
 else:
-    print (scissors)
-    
-print ("Il computer ha scelto: ")
+    print(scissors)
 
-random_integer = random.randint (0,2)
+print ("Computer chose:")
 
-if random_integer == 0:
-    print (rock)
-elif random_integer == 1:
-    print (paper)
+scelta_pc = random.randint(0,2)
+
+if scelta_pc == 0:
+    print(rock)
+elif scelta_pc == 1:
+    print(paper)
 else:
-    print (scissors)
+    print(scissors)
 
-if scelta == 0 and random_integer == 0:
-    print ("Pareggio!")
-elif scelta == 0 and random_integer == 1:
-    print ("Hai perso!")
-elif scelta == 0 and random_integer == 2:
-    print ("Hai vinto!")
-elif scelta == 1 and random_integer == 1:
-    print ("Pareggio!")
-elif scelta == 1 and random_integer == 2:
-    print ("Hai perso!")
-elif scelta == 1 and random_integer == 0:
-    print ("Hai vinto!")
-elif scelta == 2 and random_integer == 2:
-    print ("Pareggio!")
-elif scelta == 2 and random_integer == 1:
-    print ("Hai vinto!")
+if mia_scelta == 0 and scelta_pc == 1:
+    print("YOU LOST")
+elif mia_scelta == 1 and scelta_pc == 0:
+    print("YOU WON")
+elif mia_scelta == 1 and scelta_pc == 2:
+    print("YOU LOST")
+elif mia_scelta == 2 and scelta_pc == 1:
+    print("YOU WON")
+elif mia_scelta == 0 and scelta_pc == 2:
+    print("YOU WON")
+elif mia_scelta == 2 and scelta_pc == 0:
+    print("YOU LOST")
 else:
-    print ("Hai perso!")
-
+    print ("DRAW")

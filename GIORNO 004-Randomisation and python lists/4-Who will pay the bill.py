@@ -1,14 +1,19 @@
 import random
 
-amici = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+friends = ["Alice","Bob","Charlie","David","Emanuel"]
 
-# lunghezza della lista: in questo caso è 4
-lunghezza_amici = len(amici)
+who_pay = random.randint (0,4)
 
-# numero a caso tra 0 e 4
-randomizzazione = random.randint(0 , lunghezza_amici - 1)
+# if who_pay == 0:
+#     print("Alice")
+# elif who_pay == 1:
+#     print("Bob")
+# elif who_pay == 2:
+#     print("Charlie")
+# elif who_pay == 3:
+#     print("David")
+# else:
+#     print("Emanuel")
+#
 
-# prende il nome all'interno della lista corrispondente al numero randomico uscito
-persona_che_paghera = amici[randomizzazione]
-
-print (persona_che_paghera + " pagherà il conto oggi!")
+print (friends[who_pay])
