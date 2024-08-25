@@ -1,13 +1,8 @@
 
-student_scores = input("Digita i punteggi separati da uno spazio: ").split()
-for n in range(0, len(student_scores)):
-  student_scores[n] = int(student_scores[n])
-
-
+student_scores = [150,222,1654,12,465,8797,21,312,145,4566654,1223,6456456456456456454,5465]
 max = 0
+for number in student_scores:
+  if number > max:
+    max = number
+print (max)
 
-for massimo in student_scores:
-  
-  if massimo > max:
-    max = massimo
-print (f"The highest score in the class is: {max}")
