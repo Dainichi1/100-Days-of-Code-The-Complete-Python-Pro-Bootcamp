@@ -9,6 +9,10 @@ travel_log = {
     "France": ["Paris", "Lille", "Dijon"],
     "Germany": ["Berlin", "Hamburg", "Stuttgart"],
 }
+print(travel_log["France"][1])
+
+nested_list = ["A", "B", ["C", "D"]]
+print(nested_list[2][1])
 
 # Nest a dictionary in a dictionary
 travel_log = {
@@ -28,3 +32,4 @@ travel_log = [
     "total_visits": 5
     },
 ]
+print(travel_log[1]["cities_visited"][2])

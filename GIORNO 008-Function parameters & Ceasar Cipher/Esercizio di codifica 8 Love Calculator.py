@@ -1,5 +1,4 @@
-from ftplib import print_line
-from functools import total_ordering
+
 
 
 def calculate_love_score(name1,name2):
